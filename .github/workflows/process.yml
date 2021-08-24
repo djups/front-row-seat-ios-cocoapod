@@ -1,0 +1,72 @@
+name: process new version
+
+on:
+  push:
+    branches: [ main ]
+env:
+    FRAMEWORK_NAME: IMGA
+    PODSPEC_FILE_NAME: IMGASDK
+jobs:
+  process:
+    #prevent to execute if the commit message contains podspec version upgrade
+    if: "!contains(github.event.head_commit.message, 'podspec version upgrade')"
+    runs-on: macos-latest
+    name: Reading version from framework
+    outputs:
+        version: ${{ steps.exportVersion.outputs.version}}
+    steps:
+      # Check out the repository
+      - name: Checkout
+        uses: actions/checkout@v2
+      # Retrive the version from the plist
+      - uses: 2CodersStudio/ActionPlistVersion@main
+        id: plistVersion
+        with:
+          plist-path: ${{ env.FRAMEWORK_NAME }}.xcframework/ios-arm64/${{ env.FRAMEWORK_NAME }}.framework/Info.plist
+          key: CFBundleShortVersionString
+      # Make the version available for the next job
+      - name: Get Version
+        id: exportVersion
+        run: echo '::set-output name=VERSION::${{ steps.plistVersion.outputs.version }}'
+  tagging:
+    name: Tagging process
+    needs: process
+    runs-on: ubuntu-latest
+    steps:
+     # Check out the repository
+      - name: Checkout
+        uses: actions/checkout@v2
+      # Check that tag number candidate doesnt exist 
+      - uses: mukunku/tag-exists-action@v1.0.0
+        name: check previous tag
+        id: checkTag
+        with:
+          tag: 'v${{ needs.process.outputs.version }}'
+        env:
+          GITHUB_TOKEN: '${{ secrets.GITHUB_TOKEN }}'
+      # Modify the podspec
+      - name: Modify podspec
+        run: |
+          ls -a
+          filename='${{ env.PODSPEC_FILE_NAME }}.podspec'
+          orginal='.*spec.version.*'
+          replace='spec.version      = "${{ needs.process.outputs.version }}"'
+          sed -i "s/$orginal/$replace/" $filename
+          cat $filename
+      # Commit podspec change
+      - uses: stefanzweifel/git-auto-commit-action@v4
+        name: Pushes podspecfile
+        with:
+          commit_message: 'podspec version upgrade v${{ needs.process.outputs.version }}'
+          file_pattern: '*.podspec'
+      # Tag 
+      - name: Tag commit
+        if: ${{ contains(needs.process.outputs.version,'.') &&  steps.checkTag.outputs.exists != true }} 
+        uses: tvdias/github-tagger@v0.0.1
+        with:
+            repo-token: "${{ secrets.GITHUB_TOKEN }}"
+            tag: "v${{ needs.process.outputs.version }}"
+        
+
+
+      
