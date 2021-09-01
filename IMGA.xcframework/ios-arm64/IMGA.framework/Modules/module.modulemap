@@ -1,0 +1,11 @@
+framework module IMGA {
+  umbrella header "IMGA.h"
+
+  export *
+  module * { export * }
+}
+
+module IMGA.Swift {
+    header "IMGA-Swift.h"
+    requires objc
+}

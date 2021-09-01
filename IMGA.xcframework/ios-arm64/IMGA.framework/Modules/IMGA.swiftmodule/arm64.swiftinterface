@@ -1,0 +1,123 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.3.2 (swiftlang-1200.0.45 clang-1200.0.32.28)
+// swift-module-flags: -target arm64-apple-ios12.1 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -Onone -module-name IMGA
+import Foundation
+@_exported import IMGA
+import SnapKit
+import Swift
+import UIKit
+import WebKit
+extension UIView {
+  public func addSubviewAndGlue(to superview: UIKit.UIView)
+}
+public struct IMGAEventCentreParams {
+  public let operatorName: Swift.String
+  public let sport: Swift.String
+  public let version: Swift.String
+  public let eventId: Swift.String
+  public let language: Swift.String?
+  public let theme: Swift.String?
+  public let targetModule: Swift.String
+  public let initialContext: IMGA.IMGAData?
+  public let options: IMGA.IMGAData?
+  public let targetElementSelector: Swift.String
+  public init(operatorName: Swift.String, sport: Swift.String, version: Swift.String, eventId: Swift.String, language: Swift.String?, theme: Swift.String?, targetModule: Swift.String, initialContext: IMGA.IMGAData?, options: IMGA.IMGAData?, targetElementSelector: Swift.String)
+  public func toData() -> IMGA.IMGAData
+  public var description: Swift.String {
+    get
+  }
+}
+public enum IMGAError : Swift.Error {
+  public enum Initialization {
+    case webViewInitialization
+    case invalidParameters
+    case missinEventCentreParameters
+    case viewNotInHierachy
+    case errorLoadingScript
+    public static func == (a: IMGA.IMGAError.Initialization, b: IMGA.IMGAError.Initialization) -> Swift.Bool
+    public var hashValue: Swift.Int {
+      get
+    }
+    public func hash(into hasher: inout Swift.Hasher)
+  }
+  public enum Loading {
+    case urlNoValid
+    case loadingFailed
+    public static func == (a: IMGA.IMGAError.Loading, b: IMGA.IMGAError.Loading) -> Swift.Bool
+    public var hashValue: Swift.Int {
+      get
+    }
+    public func hash(into hasher: inout Swift.Hasher)
+  }
+  case initializationError(code: IMGA.IMGAError.Initialization)
+  case loading(code: IMGA.IMGAError.Loading)
+  public var description: Swift.String {
+    get
+  }
+}
+public typealias IMGAData = [Swift.String : Any]
+public typealias statusUpdate = (IMGA.IMGAStatus, IMGA.IMGAError?) -> Swift.Void
+public typealias messageUpdate = (IMGA.IMGAMessageTopic, IMGA.IMGAData, IMGA.IMGAError?) -> Swift.Void
+public typealias resultView = (UIKit.UIView?) -> Swift.Void
+public enum LogLevel {
+  case debug
+  case production
+  public static func == (a: IMGA.LogLevel, b: IMGA.LogLevel) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+  public func hash(into hasher: inout Swift.Hasher)
+}
+public enum IMGAStatus {
+  case IMGA_initializing
+  case IMGA_loadingScripts
+  case IMGA_scriptsLoaded
+  case IMGA_scriptsLoadFailed
+  case IMGA_siteBlocked
+  case IMGA_loading
+  case IMGA_loaded
+  case IMGA_viewNotInThehierachy
+  case IMGA_active
+  case IMGA_inactive
+  public static func == (a: IMGA.IMGAStatus, b: IMGA.IMGAStatus) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+  public func hash(into hasher: inout Swift.Hasher)
+}
+public enum IMGAMessageTopic : Swift.String, Swift.CaseIterable {
+  case logHandler
+  case CONTEXT_UPDATE
+  case OPTIONS_UPDATE
+  case SELECTION_UPDATE
+  case CLEAR_SELECTIONS
+  case VIDEO_PLAYBACK_AUTH_REQUEST
+  case VIDEO_PLAYBACK_AUTH_RESPONSE
+  case HANDSHAKE_ATTEMPT
+  case HANDSHAKE_FAILED
+  case HANDSHAKE_REPLY
+  case MESSAGE_TOPIC_NAME
+  public typealias RawValue = Swift.String
+  public init?(rawValue: Swift.String)
+  public var rawValue: Swift.String {
+    get
+  }
+  public typealias AllCases = [IMGA.IMGAMessageTopic]
+  public static var allCases: [IMGA.IMGAMessageTopic] {
+    get
+  }
+}
+public class IMGASDK {
+  public var status: IMGA.IMGAStatus {
+    get
+  }
+  public var onStatusChange: IMGA.statusUpdate?
+  public var onNewMessage: IMGA.messageUpdate?
+  public init(logLevel: IMGA.LogLevel = .production)
+  public func launch(andAddTo container: UIKit.UIView, with event: IMGA.IMGAData?) throws
+  public func launch(with event: IMGA.IMGAData?, result: @escaping IMGA.resultView) throws
+  public func launch(with event: IMGA.IMGAEventCentreParams?, result: @escaping IMGA.resultView) throws
+  public func stop()
+  public func update(message: IMGA.IMGAData)
+  @objc deinit
+}
