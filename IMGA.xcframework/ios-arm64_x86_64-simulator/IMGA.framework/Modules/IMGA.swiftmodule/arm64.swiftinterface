@@ -17,11 +17,12 @@ public struct IMGAEventCentreParams {
   public let eventId: Swift.String
   public let language: Swift.String?
   public let theme: Swift.String?
+  public let env: Swift.String?
   public let targetModule: Swift.String
   public let initialContext: IMGA.IMGAData?
   public let options: IMGA.IMGAData?
   public let targetElementSelector: Swift.String
-  public init(operatorName: Swift.String, sport: Swift.String, version: Swift.String, eventId: Swift.String, language: Swift.String?, theme: Swift.String?, targetModule: Swift.String, initialContext: IMGA.IMGAData?, options: IMGA.IMGAData?, targetElementSelector: Swift.String)
+  public init(operatorName: Swift.String, sport: Swift.String, version: Swift.String, eventId: Swift.String, language: Swift.String?, theme: Swift.String?, env: Swift.String?, targetModule: Swift.String, initialContext: IMGA.IMGAData?, options: IMGA.IMGAData?, targetElementSelector: Swift.String)
   public func toData() -> IMGA.IMGAData
   public var description: Swift.String {
     get

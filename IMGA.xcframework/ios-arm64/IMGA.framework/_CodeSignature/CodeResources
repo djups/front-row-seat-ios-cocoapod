@@ -26,7 +26,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		lakV9TPkCpOWTnJQ7pa980GUI3M=
+		T9JSGGnH/UGjsmY+qOeH1CA87QU=
 		</data>
 		<key>Modules/IMGA.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
@@ -34,11 +34,11 @@
 		</data>
 		<key>Modules/IMGA.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		NtvtNS8SO9PpwkJzWKadJyiX7cg=
+		cNgGy9ZMeyAgRASUFryX4KIev3Q=
 		</data>
 		<key>Modules/IMGA.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		hvy8/GR2Kj3AGEHcLKh04CTo7Gs=
+		+yP0Nw41D869r1Lfk49e3vU58+I=
 		</data>
 		<key>Modules/IMGA.swiftmodule/arm64.swiftdoc</key>
 		<data>
@@ -46,11 +46,11 @@
 		</data>
 		<key>Modules/IMGA.swiftmodule/arm64.swiftinterface</key>
 		<data>
-		NtvtNS8SO9PpwkJzWKadJyiX7cg=
+		cNgGy9ZMeyAgRASUFryX4KIev3Q=
 		</data>
 		<key>Modules/IMGA.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		hvy8/GR2Kj3AGEHcLKh04CTo7Gs=
+		+yP0Nw41D869r1Lfk49e3vU58+I=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -109,14 +109,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			JxxtBXBRKdLAVSlFplWzZPmDwn6YDLQuHsLCBwOtHMs=
+			NG/Y2AOwWaCH0Np5fWCG+jamMnuz7pkD5fnNc4bgDPE=
 			</data>
 		</dict>
 		<key>Modules/IMGA.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			rpdOB6I87Ze4RbSBPc3O1K5bHk+dWHPlp0KjsO5K7AU=
+			UtO6C0T3RGswsnfK8EQm92nu1Px2cGarJHIiDQ2agck=
 			</data>
 		</dict>
 		<key>Modules/IMGA.swiftmodule/arm64.swiftdoc</key>
@@ -130,14 +130,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			JxxtBXBRKdLAVSlFplWzZPmDwn6YDLQuHsLCBwOtHMs=
+			NG/Y2AOwWaCH0Np5fWCG+jamMnuz7pkD5fnNc4bgDPE=
 			</data>
 		</dict>
 		<key>Modules/IMGA.swiftmodule/arm64.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			rpdOB6I87Ze4RbSBPc3O1K5bHk+dWHPlp0KjsO5K7AU=
+			UtO6C0T3RGswsnfK8EQm92nu1Px2cGarJHIiDQ2agck=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
