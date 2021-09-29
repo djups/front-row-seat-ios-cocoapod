@@ -29,12 +29,12 @@ IMGA SDK requires iOS 12 and xCode 12.4
 ##### Launching the SDK with raw data
 ```swift
 let eventCentreData:IMGAData = [
-            "operator": "sgd-light",
+            "operator": "[OPERATOR-NAME]",
             "sport": "golf",
             "targetModule": "full",
             "eventId": "269",
             "language": "en",
-            "version": "latest",
+            "version": "5.x",
             "initialContext" : [
                 "view": "GroupDetail",
                 "roundNo": "1",
