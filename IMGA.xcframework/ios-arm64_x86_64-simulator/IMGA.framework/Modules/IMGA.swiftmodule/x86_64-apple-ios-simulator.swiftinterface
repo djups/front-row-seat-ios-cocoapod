@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.3.2 (swiftlang-1200.0.45 clang-1200.0.32.28)
+// swift-compiler-version: Apple Swift version 5.6.1 (swiftlang-5.6.0.323.66 clang-1316.0.20.12)
 // swift-module-flags: -target x86_64-apple-ios12.1-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -Onone -module-name IMGA
 import Foundation
 @_exported import IMGA
@@ -7,8 +7,9 @@ import SnapKit
 import Swift
 import UIKit
 import WebKit
-extension UIView {
-  public func addSubviewAndGlue(to superview: UIKit.UIView)
+import _Concurrency
+extension UIKit.UIView {
+  @_Concurrency.MainActor(unsafe) public func addSubviewAndGlue(to superview: UIKit.UIView)
 }
 public struct IMGAEventCentreParams {
   public let operatorName: Swift.String
@@ -36,19 +37,19 @@ public enum IMGAError : Swift.Error {
     case viewNotInHierachy
     case errorLoadingScript
     public static func == (a: IMGA.IMGAError.Initialization, b: IMGA.IMGAError.Initialization) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
     public var hashValue: Swift.Int {
       get
     }
-    public func hash(into hasher: inout Swift.Hasher)
   }
   public enum Loading {
     case urlNoValid
     case loadingFailed
     public static func == (a: IMGA.IMGAError.Loading, b: IMGA.IMGAError.Loading) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
     public var hashValue: Swift.Int {
       get
     }
-    public func hash(into hasher: inout Swift.Hasher)
   }
   case initializationError(code: IMGA.IMGAError.Initialization)
   case loading(code: IMGA.IMGAError.Loading)
@@ -57,17 +58,17 @@ public enum IMGAError : Swift.Error {
   }
 }
 public typealias IMGAData = [Swift.String : Any]
-public typealias statusUpdate = (IMGA.IMGAStatus, IMGA.IMGAError?) -> Swift.Void
-public typealias messageUpdate = (IMGA.IMGAMessageTopic, IMGA.IMGAData, IMGA.IMGAError?) -> Swift.Void
-public typealias resultView = (UIKit.UIView?) -> Swift.Void
+public typealias statusUpdate = (_ status: IMGA.IMGAStatus, _ error: IMGA.IMGAError?) -> Swift.Void
+public typealias messageUpdate = (_ name: IMGA.IMGAMessageTopic, _ message: IMGA.IMGAData, _ error: IMGA.IMGAError?) -> Swift.Void
+public typealias resultView = (_ view: UIKit.UIView?) -> Swift.Void
 public enum LogLevel {
   case debug
   case production
   public static func == (a: IMGA.LogLevel, b: IMGA.LogLevel) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
   public var hashValue: Swift.Int {
     get
   }
-  public func hash(into hasher: inout Swift.Hasher)
 }
 public enum IMGAStatus {
   case IMGA_initializing
@@ -81,10 +82,10 @@ public enum IMGAStatus {
   case IMGA_active
   case IMGA_inactive
   public static func == (a: IMGA.IMGAStatus, b: IMGA.IMGAStatus) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
   public var hashValue: Swift.Int {
     get
   }
-  public func hash(into hasher: inout Swift.Hasher)
 }
 public enum IMGAMessageTopic : Swift.String, Swift.CaseIterable {
   case logHandler
@@ -98,13 +99,13 @@ public enum IMGAMessageTopic : Swift.String, Swift.CaseIterable {
   case HANDSHAKE_FAILED
   case HANDSHAKE_REPLY
   case MESSAGE_TOPIC_NAME
-  public typealias RawValue = Swift.String
   public init?(rawValue: Swift.String)
-  public var rawValue: Swift.String {
+  public typealias AllCases = [IMGA.IMGAMessageTopic]
+  public typealias RawValue = Swift.String
+  public static var allCases: [IMGA.IMGAMessageTopic] {
     get
   }
-  public typealias AllCases = [IMGA.IMGAMessageTopic]
-  public static var allCases: [IMGA.IMGAMessageTopic] {
+  public var rawValue: Swift.String {
     get
   }
 }
@@ -122,3 +123,14 @@ public class IMGASDK {
   public func update(message: IMGA.IMGAData)
   @objc deinit
 }
+extension IMGA.IMGAError.Initialization : Swift.Equatable {}
+extension IMGA.IMGAError.Initialization : Swift.Hashable {}
+extension IMGA.IMGAError.Loading : Swift.Equatable {}
+extension IMGA.IMGAError.Loading : Swift.Hashable {}
+extension IMGA.LogLevel : Swift.Equatable {}
+extension IMGA.LogLevel : Swift.Hashable {}
+extension IMGA.IMGAStatus : Swift.Equatable {}
+extension IMGA.IMGAStatus : Swift.Hashable {}
+extension IMGA.IMGAMessageTopic : Swift.Equatable {}
+extension IMGA.IMGAMessageTopic : Swift.Hashable {}
+extension IMGA.IMGAMessageTopic : Swift.RawRepresentable {}

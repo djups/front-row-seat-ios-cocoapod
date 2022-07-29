@@ -18,7 +18,7 @@
 		</data>
 		<key>Headers/IMGA-Swift.h</key>
 		<data>
-		MAcpFmpgnUY7ia/RTmR83qrfcPw=
+		VPfgwlwyFHOWfLYnH3oqOGETcyk=
 		</data>
 		<key>Headers/IMGA.h</key>
 		<data>
@@ -26,31 +26,19 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		T9JSGGnH/UGjsmY+qOeH1CA87QU=
+		Gv32YN7zwQI15bBNrnYBlUb4Q0M=
 		</data>
 		<key>Modules/IMGA.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		HtB+C6yEYdbZa+17wfeIFA7zqq0=
+		66IWR5ELkUTpi3qTrePs3i1MR9c=
 		</data>
 		<key>Modules/IMGA.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		cNgGy9ZMeyAgRASUFryX4KIev3Q=
+		XWejdQZLwefyfcOAtAC9k41/RiU=
 		</data>
 		<key>Modules/IMGA.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		+yP0Nw41D869r1Lfk49e3vU58+I=
-		</data>
-		<key>Modules/IMGA.swiftmodule/arm64.swiftdoc</key>
-		<data>
-		HtB+C6yEYdbZa+17wfeIFA7zqq0=
-		</data>
-		<key>Modules/IMGA.swiftmodule/arm64.swiftinterface</key>
-		<data>
-		cNgGy9ZMeyAgRASUFryX4KIev3Q=
-		</data>
-		<key>Modules/IMGA.swiftmodule/arm64.swiftmodule</key>
-		<data>
-		+yP0Nw41D869r1Lfk49e3vU58+I=
+		+AClRqk7B0LaIZdMnIgLUshsHwM=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -88,7 +76,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			uKDILZp8N/INbPf6czB/oPosQDOBPv3LgJDR0ua1kSM=
+			1LTc4cZjA7t4R4InxMJPz+Da2SkOlTFFKYnDmd61EgI=
 			</data>
 		</dict>
 		<key>Headers/IMGA.h</key>
@@ -102,42 +90,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			64GY0MDbBmwvNgf9X5+BR/t7WYv2ptXxm6eb7Uv47dI=
+			ZhVi6HOxiCdBIIX8OgVdX2D2xBe7w6bidET8HByNOUc=
 			</data>
 		</dict>
 		<key>Modules/IMGA.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			NG/Y2AOwWaCH0Np5fWCG+jamMnuz7pkD5fnNc4bgDPE=
+			+MWe35ZYRqWS9lkQKknr8HMeS1roJ1E96bsNwRBFBYo=
 			</data>
 		</dict>
 		<key>Modules/IMGA.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			UtO6C0T3RGswsnfK8EQm92nu1Px2cGarJHIiDQ2agck=
-			</data>
-		</dict>
-		<key>Modules/IMGA.swiftmodule/arm64.swiftdoc</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			64GY0MDbBmwvNgf9X5+BR/t7WYv2ptXxm6eb7Uv47dI=
-			</data>
-		</dict>
-		<key>Modules/IMGA.swiftmodule/arm64.swiftinterface</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			NG/Y2AOwWaCH0Np5fWCG+jamMnuz7pkD5fnNc4bgDPE=
-			</data>
-		</dict>
-		<key>Modules/IMGA.swiftmodule/arm64.swiftmodule</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			UtO6C0T3RGswsnfK8EQm92nu1Px2cGarJHIiDQ2agck=
+			rIhUdVPqBauEZNyL3hZMmq38aWssgv9uqfbcSJUse6E=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
