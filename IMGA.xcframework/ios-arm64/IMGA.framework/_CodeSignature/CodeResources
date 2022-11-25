@@ -18,7 +18,7 @@
 		</data>
 		<key>Headers/IMGA-Swift.h</key>
 		<data>
-		VPfgwlwyFHOWfLYnH3oqOGETcyk=
+		ofliGpR21iUu0jlO5dizdXd81Hs=
 		</data>
 		<key>Headers/IMGA.h</key>
 		<data>
@@ -26,27 +26,35 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		Gv32YN7zwQI15bBNrnYBlUb4Q0M=
+		+FQBuPc9LksbqCBwu+iygov4mfY=
+		</data>
+		<key>Modules/IMGA.swiftmodule/arm64-apple-ios.abi.json</key>
+		<data>
+		AM+FORK3kxnEkJDNr/LI5mNPQ1k=
+		</data>
+		<key>Modules/IMGA.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
+		<data>
+		PXHlA6ZY37LZG3OKR1zWLQ8b8UM=
 		</data>
 		<key>Modules/IMGA.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		66IWR5ELkUTpi3qTrePs3i1MR9c=
+		qPLBXY9LrTZx1gIQAar6LwnrP00=
 		</data>
 		<key>Modules/IMGA.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		XWejdQZLwefyfcOAtAC9k41/RiU=
+		PXHlA6ZY37LZG3OKR1zWLQ8b8UM=
 		</data>
 		<key>Modules/IMGA.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		+AClRqk7B0LaIZdMnIgLUshsHwM=
+		NIO8dHqSzPDXh9IgVFAoQvxPRio=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
-		iTl6ooA+yZFCJrP9ICv5wXWRiZA=
+		DAbQLjnNXnmpvm4EMsDlE9che60=
 		</data>
 		<key>index.html</key>
 		<data>
-		hH31iGN/Zm2ur3cI9Ztfn9zYfpQ=
+		gahVKOS3Tt/M9kQPjLOjNTcWdSo=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -76,7 +84,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			1LTc4cZjA7t4R4InxMJPz+Da2SkOlTFFKYnDmd61EgI=
+			zJHDMPGw6h3lT2vl+/bU817EhCscVg5oEQRgAuriPuQ=
 			</data>
 		</dict>
 		<key>Headers/IMGA.h</key>
@@ -86,39 +94,53 @@
 			gq0Thb+Q08fIKNqqi2cvSbKcOOjV70FmPIfYGiXSrs8=
 			</data>
 		</dict>
+		<key>Modules/IMGA.swiftmodule/arm64-apple-ios.abi.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			5gyVgbNxAVd/+18jinsXWqAUCu+AmtMkjg2/GW3KKs4=
+			</data>
+		</dict>
+		<key>Modules/IMGA.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			/BfmIbmKwCdR5y680iH8WpOLH0vqSHpu530g3Qc+GQo=
+			</data>
+		</dict>
 		<key>Modules/IMGA.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ZhVi6HOxiCdBIIX8OgVdX2D2xBe7w6bidET8HByNOUc=
+			Dg2aWfdkc6Q7OcsJiYrzXYLP05+PCo4pMiTPNcbr3h8=
 			</data>
 		</dict>
 		<key>Modules/IMGA.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			+MWe35ZYRqWS9lkQKknr8HMeS1roJ1E96bsNwRBFBYo=
+			/BfmIbmKwCdR5y680iH8WpOLH0vqSHpu530g3Qc+GQo=
 			</data>
 		</dict>
 		<key>Modules/IMGA.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			rIhUdVPqBauEZNyL3hZMmq38aWssgv9uqfbcSJUse6E=
+			B/M8DJotxBJPQrcTjv5FQwTgzyfmKhCFpTlpsA4ptMQ=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			IoNRiZV2ORcla9yWa4lV+8gYg15Syp/0NeSrZ4hak1Y=
+			p/nVgCUPkUbIneG23nIX7cJoDTS8RiupUGk43sGTwn8=
 			</data>
 		</dict>
 		<key>index.html</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			dBmw6m/y0RoRK4p5sBtNuFA15MwEZ/Gik0fNZWzQSIw=
+			0fwZ6p9HSPxdBrU+VARgMWg/UkKJxhOF1aLxqG8gZcY=
 			</data>
 		</dict>
 	</dict>

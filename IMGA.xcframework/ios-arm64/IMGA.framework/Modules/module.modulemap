@@ -6,6 +6,6 @@ framework module IMGA {
 }
 
 module IMGA.Swift {
-    header "IMGA-Swift.h"
-    requires objc
+  header "IMGA-Swift.h"
+  requires objc
 }
