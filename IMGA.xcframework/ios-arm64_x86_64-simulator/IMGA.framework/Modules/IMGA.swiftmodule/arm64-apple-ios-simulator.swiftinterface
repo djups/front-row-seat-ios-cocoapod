@@ -4,7 +4,6 @@
 // swift-module-flags-ignorable: -enable-bare-slash-regex
 import Foundation
 @_exported import IMGA
-import SnapKit
 import Swift
 import UIKit
 import WebKit

@@ -30,11 +30,11 @@
 		</data>
 		<key>Modules/IMGA.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		AM+FORK3kxnEkJDNr/LI5mNPQ1k=
+		d8UtjW4KZIVMzmpxrwEdB1Ewso0=
 		</data>
 		<key>Modules/IMGA.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		PXHlA6ZY37LZG3OKR1zWLQ8b8UM=
+		ijXY5YQaLve/HOjdixufA1vaOZs=
 		</data>
 		<key>Modules/IMGA.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
@@ -42,11 +42,11 @@
 		</data>
 		<key>Modules/IMGA.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		PXHlA6ZY37LZG3OKR1zWLQ8b8UM=
+		ijXY5YQaLve/HOjdixufA1vaOZs=
 		</data>
 		<key>Modules/IMGA.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		NIO8dHqSzPDXh9IgVFAoQvxPRio=
+		sChU9uFCVKkJoyRiAlBQv3pIx0s=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -98,14 +98,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			5gyVgbNxAVd/+18jinsXWqAUCu+AmtMkjg2/GW3KKs4=
+			bpeytXOgSumLbCULIjvq4YInUCWZdH0wF1VqDb+lVWg=
 			</data>
 		</dict>
 		<key>Modules/IMGA.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			/BfmIbmKwCdR5y680iH8WpOLH0vqSHpu530g3Qc+GQo=
+			RC6greLYiMvhnZBJGNN95nOQ6ge8Cz2Lf7VLqX6KTW4=
 			</data>
 		</dict>
 		<key>Modules/IMGA.swiftmodule/arm64-apple-ios.swiftdoc</key>
@@ -119,14 +119,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			/BfmIbmKwCdR5y680iH8WpOLH0vqSHpu530g3Qc+GQo=
+			RC6greLYiMvhnZBJGNN95nOQ6ge8Cz2Lf7VLqX6KTW4=
 			</data>
 		</dict>
 		<key>Modules/IMGA.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			B/M8DJotxBJPQrcTjv5FQwTgzyfmKhCFpTlpsA4ptMQ=
+			taW8zvGWCqI8UTrGqHKVwCv9DqeE2IL4DnbPGCpXlHE=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
