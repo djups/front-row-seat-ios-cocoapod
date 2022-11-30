@@ -9,7 +9,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "IMGASDK"
-spec.version      = "0.5"
+  spec.version      = "0.5"
   spec.summary      = "IMGA SDK"
   spec.description  = <<-DESC
   IMGA SDK for iOS is library for iOS providing a powerful high-level webview abstractions to interact with the IMGA web app. 
@@ -19,11 +19,10 @@ spec.version      = "0.5"
   spec.homepage     = "https://github.com/IMGARENA/front-row-seat-ios-cocoapod"
   spec.license      = "IMG Media Limited"
   spec.author       = { "David Santana" => "david@2coders.com" }
-  spec.source       = { :git => "https://github.com/IMGARENA/front-row-seat-ios-cocoapod.git", :tag => "v0.4"}
+  spec.source       = { :git => "https://github.com/IMGARENA/front-row-seat-ios-cocoapod.git", :tag => "v0.5"}
   spec.vendored_frameworks = "IMGA.xcframework"
   spec.platform = :ios
   spec.swift_version = "5.1"
   spec.ios.deployment_target  = '14.0'
-  spec.dependency 'SnapKit', '~> 5.0.1'
 
 end
