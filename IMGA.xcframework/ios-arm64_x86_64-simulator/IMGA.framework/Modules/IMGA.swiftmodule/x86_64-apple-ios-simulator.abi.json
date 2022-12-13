@@ -3436,8 +3436,8 @@
           },
           {
             "kind": "Var",
-            "name": "IMGA_loaded",
-            "printedName": "IMGA_loaded",
+            "name": "IMGA_web_setup_completed",
+            "printedName": "IMGA_web_setup_completed",
             "children": [
               {
                 "kind": "TypeFunc",
@@ -3467,8 +3467,8 @@
               }
             ],
             "declKind": "EnumElement",
-            "usr": "s:4IMGA10IMGAStatusO0A7_loadedyA2CmF",
-            "mangledName": "$s4IMGA10IMGAStatusO0A7_loadedyA2CmF",
+            "usr": "s:4IMGA10IMGAStatusO0A20_web_setup_completedyA2CmF",
+            "mangledName": "$s4IMGA10IMGAStatusO0A20_web_setup_completedyA2CmF",
             "moduleName": "IMGA"
           },
           {
@@ -4114,6 +4114,43 @@
             "declKind": "EnumElement",
             "usr": "s:4IMGA16IMGAMessageTopicO18MESSAGE_TOPIC_NAMEyA2CmF",
             "mangledName": "$s4IMGA16IMGAMessageTopicO18MESSAGE_TOPIC_NAMEyA2CmF",
+            "moduleName": "IMGA"
+          },
+          {
+            "kind": "Var",
+            "name": "APP_LOADED",
+            "printedName": "APP_LOADED",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(IMGA.IMGAMessageTopic.Type) -> IMGA.IMGAMessageTopic",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "IMGAMessageTopic",
+                    "printedName": "IMGA.IMGAMessageTopic",
+                    "usr": "s:4IMGA16IMGAMessageTopicO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "IMGA.IMGAMessageTopic.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "IMGAMessageTopic",
+                        "printedName": "IMGA.IMGAMessageTopic",
+                        "usr": "s:4IMGA16IMGAMessageTopicO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:4IMGA16IMGAMessageTopicO10APP_LOADEDyA2CmF",
+            "mangledName": "$s4IMGA16IMGAMessageTopicO10APP_LOADEDyA2CmF",
             "moduleName": "IMGA"
           },
           {

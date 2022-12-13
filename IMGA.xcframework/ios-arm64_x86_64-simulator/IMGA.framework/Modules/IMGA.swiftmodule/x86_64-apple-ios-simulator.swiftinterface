@@ -78,7 +78,7 @@ public enum IMGAStatus {
   case IMGA_scriptsLoadFailed
   case IMGA_siteBlocked
   case IMGA_loading
-  case IMGA_loaded
+  case IMGA_web_setup_completed
   case IMGA_viewNotInThehierachy
   case IMGA_active
   case IMGA_inactive
@@ -100,6 +100,7 @@ public enum IMGAMessageTopic : Swift.String, Swift.CaseIterable {
   case HANDSHAKE_FAILED
   case HANDSHAKE_REPLY
   case MESSAGE_TOPIC_NAME
+  case APP_LOADED
   public init?(rawValue: Swift.String)
   public typealias AllCases = [IMGA.IMGAMessageTopic]
   public typealias RawValue = Swift.String
