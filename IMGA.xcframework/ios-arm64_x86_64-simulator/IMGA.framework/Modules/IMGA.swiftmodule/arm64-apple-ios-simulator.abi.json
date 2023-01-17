@@ -511,6 +511,54 @@
             ],
             "isFromExtension": true,
             "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "emit",
+            "printedName": "emit(topic:data:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "IMGAMessageTopic",
+                "printedName": "IMGA.IMGAMessageTopic",
+                "usr": "s:4IMGA16IMGAMessageTopicO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Any]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:4IMGA8IMGAViewC4emit5topic4datayAA16IMGAMessageTopicO_SDySSypGtF",
+            "mangledName": "$s4IMGA8IMGAViewC4emit5topic4datayAA16IMGAMessageTopicO_SDySSypGtF",
+            "moduleName": "IMGA",
+            "isOpen": true,
+            "declAttributes": [
+              "Custom",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Class",
@@ -1185,6 +1233,54 @@
             "declKind": "Func",
             "usr": "s:4IMGA11IMGAWebviewC6update7messageySDySSypG_tF",
             "mangledName": "$s4IMGA11IMGAWebviewC6update7messageySDySSypG_tF",
+            "moduleName": "IMGA",
+            "isOpen": true,
+            "declAttributes": [
+              "Custom",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "emit",
+            "printedName": "emit(topic:data:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "IMGAMessageTopic",
+                "printedName": "IMGA.IMGAMessageTopic",
+                "usr": "s:4IMGA16IMGAMessageTopicO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Any]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:4IMGA11IMGAWebviewC4emit5topic4datayAA16IMGAMessageTopicO_SDySSypGtF",
+            "mangledName": "$s4IMGA11IMGAWebviewC4emit5topic4datayAA16IMGAMessageTopicO_SDySSypGtF",
             "moduleName": "IMGA",
             "isOpen": true,
             "declAttributes": [
@@ -2048,6 +2144,203 @@
             ]
           },
           {
+            "kind": "Var",
+            "name": "__iframe_url_override__",
+            "printedName": "__iframe_url_override__",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String : Any]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Any]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "Any"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:4IMGA21IMGAEventCentreParamsV23__iframe_url_override__SDySSypGSgvp",
+            "mangledName": "$s4IMGA21IMGAEventCentreParamsV23__iframe_url_override__SDySSypGSgvp",
+            "moduleName": "IMGA",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "[Swift.String : Any]?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Dictionary",
+                        "printedName": "[Swift.String : Any]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "ProtocolComposition",
+                            "printedName": "Any"
+                          }
+                        ],
+                        "usr": "s:SD"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:4IMGA21IMGAEventCentreParamsV23__iframe_url_override__SDySSypGSgvg",
+                "mangledName": "$s4IMGA21IMGAEventCentreParamsV23__iframe_url_override__SDySSypGSgvg",
+                "moduleName": "IMGA",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "__replay_id__",
+            "printedName": "__replay_id__",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:4IMGA21IMGAEventCentreParamsV13__replay_id__SSSgvp",
+            "mangledName": "$s4IMGA21IMGAEventCentreParamsV13__replay_id__SSSgvp",
+            "moduleName": "IMGA",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:4IMGA21IMGAEventCentreParamsV13__replay_id__SSSgvg",
+                "mangledName": "$s4IMGA21IMGAEventCentreParamsV13__replay_id__SSSgvg",
+                "moduleName": "IMGA",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:4IMGA21IMGAEventCentreParamsV13__replay_id__SSSgvs",
+                "mangledName": "$s4IMGA21IMGAEventCentreParamsV13__replay_id__SSSgvs",
+                "moduleName": "IMGA",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:4IMGA21IMGAEventCentreParamsV13__replay_id__SSSgvM",
+                "mangledName": "$s4IMGA21IMGAEventCentreParamsV13__replay_id__SSSgvM",
+                "moduleName": "IMGA",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
             "kind": "Constructor",
             "name": "init",
             "printedName": "init(operatorName:sport:version:eventId:language:theme:env:targetModule:initialContext:options:targetElementSelector:)",
@@ -2196,8 +2489,7 @@
             "mangledName": "$s4IMGA21IMGAEventCentreParamsV12operatorName5sport7version7eventId8language5theme3env12targetModule14initialContext7options0N15ElementSelectorACSS_S4SSgA2OSSSDySSypGSgAQSStcfc",
             "moduleName": "IMGA",
             "declAttributes": [
-              "AccessControl",
-              "RawDocComment"
+              "AccessControl"
             ],
             "init_kind": "Designated"
           },
@@ -5176,6 +5468,52 @@
             "declAttributes": [
               "AccessControl",
               "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "emit",
+            "printedName": "emit(topic:data:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "IMGAMessageTopic",
+                "printedName": "IMGA.IMGAMessageTopic",
+                "usr": "s:4IMGA16IMGAMessageTopicO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Any]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:4IMGA7IMGASDKC4emit5topic4datayAA16IMGAMessageTopicO_SDySSypGtF",
+            "mangledName": "$s4IMGA7IMGASDKC4emit5topic4datayAA16IMGAMessageTopicO_SDySSypGtF",
+            "moduleName": "IMGA",
+            "isOpen": true,
+            "declAttributes": [
+              "AccessControl"
             ],
             "funcSelfKind": "NonMutating"
           },

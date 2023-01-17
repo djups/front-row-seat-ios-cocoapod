@@ -24,6 +24,8 @@ public struct IMGAEventCentreParams {
   public let initialContext: IMGA.IMGAData?
   public let options: IMGA.IMGAData?
   public let targetElementSelector: Swift.String
+  public let __iframe_url_override__: IMGA.IMGAData?
+  public var __replay_id__: Swift.String?
   public init(operatorName: Swift.String, sport: Swift.String, version: Swift.String, eventId: Swift.String, language: Swift.String?, theme: Swift.String?, env: Swift.String?, targetModule: Swift.String, initialContext: IMGA.IMGAData?, options: IMGA.IMGAData?, targetElementSelector: Swift.String)
   public func toData() -> IMGA.IMGAData
   public var description: Swift.String {
@@ -123,6 +125,7 @@ public class IMGASDK {
   public func launch(with event: IMGA.IMGAEventCentreParams?, result: @escaping IMGA.resultView) throws
   public func stop()
   public func update(message: IMGA.IMGAData)
+  public func emit(topic: IMGA.IMGAMessageTopic, data: IMGA.IMGAData)
   @objc deinit
 }
 extension IMGA.IMGAError.Initialization : Swift.Equatable {}
