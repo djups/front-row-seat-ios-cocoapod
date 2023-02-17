@@ -95,7 +95,7 @@ jobs:
       # Release
       - name: Create Release
         id: create_release
-        uses: actions/action-gh-release@v1
+        uses: softprops/action-gh-release@v1
         with:
           files: ${{ env.FRAMEWORK_NAME }}.xcframework.zip
       
