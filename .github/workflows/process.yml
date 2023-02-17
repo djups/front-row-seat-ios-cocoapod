@@ -89,7 +89,7 @@ jobs:
         name: Pushes podspecfile
         with:
           commit_message: 'podspec and package.swift version upgrade v${{ needs.process.outputs.version }}'
-          file_pattern: '*.podspec, Package.swift'
+          file_pattern: '*.podspec Package.swift'
           tagging_message: 'v${{ needs.process.outputs.version }}'
 
       # Release
