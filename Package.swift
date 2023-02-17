@@ -21,7 +21,7 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "IMGA",
-            url: "https://github.com/IMGARENA/front-row-seat-ios-cocoapod/archive/refs/tags/v0.7.zip",
+            url: "https://github.com/IMGARENA/front-row-seat-ios-cocoapod/releases/download/v0.7/IMGA.xcframework.zip",
             checksum: "a163a91142019206135ae0d393fb3bbe7d63127be2ae40ddbf8baa20349c2d05"
         )
     ]

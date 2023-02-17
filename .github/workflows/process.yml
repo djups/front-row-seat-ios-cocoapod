@@ -53,12 +53,49 @@ jobs:
           replace='spec.version      = "${{ needs.process.outputs.version }}"'
           sed -i "s/$orginal/$replace/" $filename
           cat $filename
+      
+      # Zip the framework
+      - name: Zip framework
+        run: |
+          zip -r ${{ env.FRAMEWORK_NAME }}.xcframework.zip ${{ env.FRAMEWORK_NAME }}.xcframework
+
+      # Get the checksum of framework
+
+      - name: Get checksum
+        id: checksum
+        run: |
+          echo "::set-output name=checksum::$(shasum -a 256 ${{ env.FRAMEWORK_NAME }}.xcframework.zip | awk '{print $1}')"
+      
+      # Modify the package.swift
+
+      - name: Modify package.swift
+        run: |
+          filename='Package.swift'
+          orginal='.*checksum.*'
+          replace='checksum: "${{ steps.checksum.outputs.checksum }}"'
+          sed -i "s/$orginal/$replace/" $filename
+          cat $filename
+
+      - name: Modify version in package.swift
+        run: |
+          filename='Package.swift'
+          orginal='.*url:.*'
+          replace='url: "https://github.com/IMGARENA/front-row-seat-ios-cocoapod/releases/download/v${{ needs.process.outputs.version}}/IMGA.xcframework.zip"'
+          sed -i "s/$orginal/$replace/" $filename
+          cat $filename
+        
       # Commit podspec change
       - uses: stefanzweifel/git-auto-commit-action@v4
         name: Pushes podspecfile
         with:
-          commit_message: 'podspec version upgrade v${{ needs.process.outputs.version }}'
-          file_pattern: '*.podspec'
+          commit_message: 'podspec and package.swift version upgrade v${{ needs.process.outputs.version }}'
+          file_pattern: '*.podspec, Package.swift'
           tagging_message: 'v${{ needs.process.outputs.version }}'
 
+      # Release
+      - name: Create Release
+        id: create_release
+        uses: actions/action-gh-release@v1
+        with:
+          files: ${{ env.FRAMEWORK_NAME }}.xcframework.zip
       
