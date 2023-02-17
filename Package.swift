@@ -22,7 +22,7 @@ let package = Package(
         .binaryTarget(
             name: "IMGA",
             url: "https://github.com/IMGARENA/front-row-seat-ios-cocoapod/archive/refs/tags/v0.7.zip",
-            checksum: "acc9e33aedc6cc84c4eaa17bf52c177401115bf5"
+            checksum: "a163a91142019206135ae0d393fb3bbe7d63127be2ae40ddbf8baa20349c2d05"
         )
     ]
 )
