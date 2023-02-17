@@ -16,13 +16,13 @@ let package = Package(
     ],
     dependencies: [
         // Dependencies declare other packages that this package depends on.
-        // .package(url: /* package url */, from: "1.0.0"),
+url: "https://github.com/IMGARENA/front-row-seat-ios-cocoapod/releases/download/v0.8/IMGA.xcframework.zip"
     ],
     targets: [
         .binaryTarget(
             name: "IMGA",
-            url: "https://github.com/IMGARENA/front-row-seat-ios-cocoapod/releases/download/v0.7/IMGA.xcframework.zip",
-            checksum: "a163a91142019206135ae0d393fb3bbe7d63127be2ae40ddbf8baa20349c2d05"
+url: "https://github.com/IMGARENA/front-row-seat-ios-cocoapod/releases/download/v0.8/IMGA.xcframework.zip"
+checksum: "ee1d0d2ac8188739aff8abcf46177415bfdaf925da7b6d4448ed4affb2e383e4"
         )
     ]
 )
