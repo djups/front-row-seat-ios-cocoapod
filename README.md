@@ -8,7 +8,16 @@ IMGA SDK supports multiple methods for installing the library in a project.
 To integrate IMGA SDK into your Xcode project using CocoaPods, specify it in your `Podfile`:
 
 ```ruby
-pod 'IMGASDK', :git => 'git@github.com:IMGARENA/front-row-seat-ios-cocoapod.git', :tag => 'v0.7'
+pod 'IMGASDK', :git => 'git@github.com:IMGARENA/front-row-seat-ios-cocoapod.git', :tag => 'v0.8'
+```
+
+## Installation with SPM
+
+To integrate IMGA SDK into your Swift project using SPM, spicify it in your Package.swift
+```swift
+dependencies: [
+    .package(url: "https://github.com/IMGARENA/front-row-seat-ios-cocoapod", from: "0.8.0")
+],
 ```
 
 ## Requirements
