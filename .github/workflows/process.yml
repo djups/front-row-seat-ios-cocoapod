@@ -80,7 +80,7 @@ jobs:
         run: |
           filename='Package.swift'
           orginal='.*url:.*'
-          replace='url: "https://github.com/IMGARENA/front-row-seat-ios-cocoapod/releases/download/v${{ needs.process.outputs.version}}/IMGA.xcframework.zip"'
+          replace='url: "https://github.com/IMGARENA/front-row-seat-ios-cocoapod/releases/download/v${{ needs.process.outputs.version}}/IMGA.xcframework.zip",'
           sed -i "s|$orginal|$replace|" $filename
           cat $filename
         
@@ -98,4 +98,5 @@ jobs:
         uses: softprops/action-gh-release@v1
         with:
           files: ${{ env.FRAMEWORK_NAME }}.xcframework.zip
+          tag_name: v${{ needs.process.outputs.version }}
       
