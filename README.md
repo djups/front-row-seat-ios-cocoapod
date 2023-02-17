@@ -13,7 +13,7 @@ pod 'IMGASDK', :git => 'git@github.com:IMGARENA/front-row-seat-ios-cocoapod.git'
 
 ## Installation with SPM
 
-To integrate IMGA SDK into your Swift project using SPM, spicify it in your Package.swift
+To integrate IMGA SDK into your Swift project using SPM, specify it in your Package.swift
 ```swift
 dependencies: [
     .package(url: "https://github.com/IMGARENA/front-row-seat-ios-cocoapod", from: "0.8.0")
