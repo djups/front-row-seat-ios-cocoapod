@@ -81,7 +81,7 @@ jobs:
           filename='Package.swift'
           orginal='.*url:.*'
           replace='url: "https://github.com/IMGARENA/front-row-seat-ios-cocoapod/releases/download/v${{ needs.process.outputs.version}}/IMGA.xcframework.zip"'
-          sed -i "s/$orginal/$replace/" $filename
+          sed -i "s|$orginal|$replace|" $filename
           cat $filename
         
       # Commit podspec change
