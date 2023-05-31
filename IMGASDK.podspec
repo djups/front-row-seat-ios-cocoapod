@@ -16,10 +16,10 @@ spec.version      = "0.8"
 
                    DESC
 
-  spec.homepage     = "https://github.com/IMGARENA/front-row-seat-ios-cocoapod"
+  spec.homepage     = "https://github.com/djups/front-row-seat-ios-cocoapod"
   spec.license      = "IMG Media Limited"
   spec.author       = { "David Santana" => "david@2coders.com" }
-  spec.source       = { :git => "https://github.com/IMGARENA/front-row-seat-ios-cocoapod.git", :tag => "v0.5"}
+  spec.source       = { :git => "https://github.com/djups/front-row-seat-ios-cocoapod.git", :tag => "v0.5"}
   spec.vendored_frameworks = "IMGA.xcframework"
   spec.platform = :ios
   spec.swift_version = "5.1"
