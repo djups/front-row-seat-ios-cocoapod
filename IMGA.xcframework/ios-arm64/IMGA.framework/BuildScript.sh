@@ -1,6 +1,3 @@
-#!/bin/sh
-#!/bin/bash
-
 #  BuildScript.sh
 #  IMGA
 #
